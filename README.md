@@ -80,5 +80,5 @@ There are a couple pre-defined plots to make life easier:
 ```
 
 <p align="center">
-	<img src="./examples/circle.png" alt="circle>
+	<img src="./examples/circle.png" alt="circle">
 </p>
