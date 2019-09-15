@@ -73,10 +73,10 @@ There are a couple pre-defined plots to make life easier:
 </p>
 
 ```lisp
-(define fns (list (lambda (x) (sqrt (- 25
-                                         (expt x 2))))
-                  (lambda (x) (- (sqrt (- 25
-                                            (expt x 2)))))))
+
+(define fns (list (lambda (x) (sqrt (- 25 (expt 2))))
+                  (lambda (x) (- (sqrt (- 25 (expt x 2)))))))
+                                            
 (draw-plot (foldl (lambda (fn p)
                     (add-func fn p "blue" -5 5 0.005))
                   STANDARD
