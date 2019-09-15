@@ -72,4 +72,13 @@ There are a couple pre-defined plots to make life easier:
 	<img src="./examples/sinx.png" alt="(sin x">
 </p>
 
+```lisp
+(define fns (list (lambda (x) (sqrt (- 25
+                                         (expt x 2))))
+                    (lambda (x) (- (sqrt (- 25
+                                            (expt x 2)))))))
+```
 
+<p align="center">
+	<img src="./examples/circle.png" alt="circle>
+</p>
