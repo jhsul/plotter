@@ -75,7 +75,7 @@ There are a couple pre-defined plots to make life easier:
 ```lisp
 (define fns (list (lambda (x) (sqrt (- 25
                                          (expt x 2))))
-                    (lambda (x) (- (sqrt (- 25
+                  (lambda (x) (- (sqrt (- 25
                                             (expt x 2)))))))
 ```
 

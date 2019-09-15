@@ -15,9 +15,6 @@
 (define Q3 (make-plot -10 1 -10 1 empty))
 (define Q4 (make-plot -1 10 -10 1 empty))
 
-;(define my-plot (make-plot -10 10 -10 10 (list (make-point -4 3 "red"))))
-
-;; Plot -> Image
 (define (draw-plot p)
   (local [
           (define x-axis-offset (* (plot-max-y p)
@@ -91,10 +88,3 @@
    (plot-min-y p)
    (plot-max-y p)
    empty))
-
-;(draw-plot my-plot)
-(define (my-fun x) (* 3 x))
-
-;> (define my-plot (make-plot -5 5 -1 1 empty))
-;> (define cosine (add-func my-plot cos "blue" -5 5 0.05))
-;
