@@ -26,8 +26,6 @@ There are a couple pre-defined plots to make life easier:
   p : plot? 
 ```
 
-Draws the plot with all its points
-
 ### `(add-point pnt p)`
 
 ```lisp
@@ -54,3 +52,12 @@ Draws the plot with all its points
 (clear-plot p) → plot?
   p : point? 
 ```
+
+## Examples
+
+```lisp
+(draw-plot (add-func Q1 (lambda (x) x) "red" -1 10))
+```
+![alt text](./examples/3x.png "(* 3 x)"
+
+
