@@ -80,7 +80,8 @@ There are a couple pre-defined plots to make life easier:
 (draw-plot (foldl (lambda (fn p)
                     (add-func fn p "blue" -5 5 0.005))
                   STANDARD
-                  fns))```
+                  fns)) 
+```
 
 <p align="center">
 	<img src="./examples/circle.png" alt="circle">
