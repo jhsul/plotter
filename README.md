@@ -58,6 +58,8 @@ There are a couple pre-defined plots to make life easier:
 ```lisp
 (draw-plot (add-func Q1 (lambda (x) x) "red" -1 10))
 ```
-![alt text](./examples/3x.png "(* 3 x)")
+<p align="center">
+	<img src="./examples/3x.png" alt="(* 3 x)">
+</p>
 
 
