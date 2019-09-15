@@ -37,9 +37,9 @@ There are a couple pre-defined plots to make life easier:
 ### `(add-func p fn color start end (step 0.05))`
 
 ```lisp
-(add-func p fn color start end (step 0.05)) → plot?
-  p     : plot? 
+(add-func fn p color start end (step 0.05)) → plot?
   fn    : procedure?
+  p     : plot? 
   color : string?
   start : Number?
   end   : Number?
@@ -58,8 +58,18 @@ There are a couple pre-defined plots to make life easier:
 ```lisp
 (draw-plot (add-func Q1 (lambda (x) x) "red" -1 10))
 ```
+
 <p align="center">
 	<img src="./examples/3x.png" alt="(* 3 x)">
+</p>
+
+```lisp
+(define my-plot (make-plot (* -2 pi) (* 2 pi) -1 1 empty))
+(draw-plot (add-func sin my-plot "darkgreen" (* -2 pi) (* 2 pi) 0.01))
+```
+
+<p align="center">
+	<img src="./examples/sinx.png" alt="(sin x">
 </p>
 
 

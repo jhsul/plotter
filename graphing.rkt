@@ -73,7 +73,7 @@
    (plot-max-y p)
    (cons pnt (plot-lop p))))
 
-(define (add-func p fn color start end (step 0.05))
+(define (add-func fn p color start end (step 0.05))
   (local [(define lop (build-list (exact-floor (/ (- end start) step))
                                   (lambda (x)
                                     (make-point (+ (* x step) start)
